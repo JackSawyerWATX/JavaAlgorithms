@@ -45,31 +45,31 @@ public class ArrayStructures {
         }
     }
 
-    public void insertValue(int value){
-        if (arraySize < 50){
+    public void insertValue(int value) {
+        if (arraySize < 50) {
             theArray[arraySize] = value;
             arraySize++;
         }
     }
 
-    public String linearSearchForValue(int value){
+    public String linearSearchForValue(int value) {
         boolean valueInArray = false;
         String indexWithValue = "";
         System.out.println("The value was found in the following: ");
-        for(int i=0; i<arraySize; i++){
-            if(theArray[i] == value){
+        for (int i = 0; i < arraySize; i++) {
+            if (theArray[i] == value) {
                 valueInArray = true;
                 System.out.print(i + " ");
-                indexWithValue+= i + " ";
+                indexWithValue += i + " ";
             }
         }
-        if(!valueInArray){
+        if (!valueInArray) {
             indexWithValue = "None";
             System.out.print(indexWithValue);
         }
         System.out.println();
 
-       return indexWithValue;
+        return indexWithValue;
     }
 
     public static void main(String[] args) {
